@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "start": "next start",
+    "start": "serve -s out -l 8080",
     "lint": "next lint"
   },
   "dependencies": {
