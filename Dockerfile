@@ -1,23 +1,21 @@
-# 1. Choisir une image Node officielle
-FROM node:22
+FROM node:22-alpine
 
-# 2. Définir le répertoire de travail dans le container
 WORKDIR /app
 
-# 3. Copier package.json + package-lock.json (si présent)
+# Copier package.json + package-lock.json
 COPY package*.json ./
 
-# 4. Installer les dépendances
+# Installer les dépendances
 RUN npm install
 
-# 5. Copier tout le reste des fichiers dans le container
+# Copier tout le code source
 COPY . .
 
-# 6. Builder l'app (pour Next.js)
+# Builder l'app Next.js
 RUN npm run build
 
-# 7. Exposer le port sur lequel l'app tourne (exemple 3000)
-EXPOSE 8181
+# Exposer le port sur lequel Next.js va tourner
+EXPOSE 8080
 
-# 8. Commande pour démarrer l'app
+# Commande pour démarrer l'app en mode SSR classique
 CMD ["npm", "start"]
