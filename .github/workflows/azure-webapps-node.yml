@@ -41,8 +41,8 @@ jobs:
       run: |
         az webapp config container set \
           --name ${{ env.AZURE_WEBAPP_NAME }} \
-          --resource-group <alexandre-cuneo_group> \
+          --resource-group alexandre-cuneo_group \
           --docker-custom-image-name ${{ secrets.ACR_LOGIN_SERVER }}/myapp:${{ github.sha }}
 
     - name: Restart Azure WebApp
-      run: az webapp restart --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group <alexandre-cuneo_group>
+      run: az webapp restart --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group alexandre-cuneo_group
