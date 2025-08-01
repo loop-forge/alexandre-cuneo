@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/alexandre-cuneo',
 }
 
 export default nextConfig
