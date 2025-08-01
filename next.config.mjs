@@ -11,6 +11,7 @@ const nextConfig = {
   },
   basePath: '/alexandre-cuneo',
   output: 'export',
+  
 }
 
 export default nextConfig
