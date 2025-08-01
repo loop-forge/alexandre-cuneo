@@ -5,7 +5,6 @@
   "scripts": {
     "build": "next build",
     "start": "next start -p 8080",
-    "export": "next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

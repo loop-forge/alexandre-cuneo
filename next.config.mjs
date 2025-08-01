@@ -10,6 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/alexandre-cuneo',
+  output: 'export',
 }
 
 export default nextConfig
