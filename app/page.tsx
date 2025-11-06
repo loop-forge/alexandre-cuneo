@@ -112,7 +112,7 @@ export default function Resume() {
       name: "Alexandre Cuneo",
       title: "Développeur Full-Stack",
       description:
-        "Développeur Java passionné avec plus de 5 ans d'expérience dans la création d'applications d'entreprise évolutives. Spécialisé dans l'architecture de microservices, les technologies cloud et les pratiques de développement modernes.",
+        "Développeur Java passionné avec plus de 3 ans d'expérience dans la création et la maintenance de sites et d'applications d'entreprise. Architectures microservices, technologies cloud et pratiques de développement modernes.",
       downloadPdf: "Télécharger PDF",
       experience: "Expérience",
       keyProjects: "Projets Clés",
